@@ -1,22 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Column(
-      children: [
-        Text(
-          'deliver',
-          textDirection: TextDirection.ltr,
+void main() => runApp(MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hello World"),
         ),
-        Text(
-          'data',
-          textDirection: TextDirection.ltr,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {  },
+          child: Icon(Icons.add),
         ),
-        Column(
-          children: [
-            Text(
-              'Hello World',
-              textDirection: TextDirection.ltr,
-            ),
-          ],
-        )
-      ],
+      ),
     ));
